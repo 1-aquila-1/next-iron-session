@@ -17,6 +17,7 @@ export default function Home() {
       <h1>Sys Product</h1>
       <div className={styles.menu}>
         <Link href="/about">Sobre</Link>
+        <Link href="https://sale.wiggles.com.br">Sale</Link>
         <button onClick={toLogout}>Sair</button>
       </div>
       <h5>{loading}</h5>
