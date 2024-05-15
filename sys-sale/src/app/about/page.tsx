@@ -7,7 +7,7 @@ export default function Sobre() {
 
   return (
     <main className={styles.container}>
-      <h1>Sobre</h1>
+      <h1>About Sys Sale</h1>
       <Link href="/">Voltar</Link>
     </main>
   );

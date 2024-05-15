@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
-      <h1>Sys Product</h1>
+      <h1>Sys Sale</h1>
       <div className={styles.menu}>
         <Link href="/about">Sobre</Link>
         <button onClick={toLogout}>Sair</button>

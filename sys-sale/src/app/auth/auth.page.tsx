@@ -13,7 +13,7 @@ export default  function AuthPage() {
 
   return (
     <main className={styles.container}>
-      <h1>Sys Product</h1>
+      <h1>Sys Sale</h1>
       <button onClick={toFazerLogin}>Fazer Login</button>
       <h3>{loading}</h3>
     </main>
