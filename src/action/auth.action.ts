@@ -36,12 +36,14 @@ export async function logout() {
 export const obterSessionOptions = async () =>{
   let d = ""
   const h = headers()
+  let amb = "dev"
   const domain =  h.get("host")
   if (domain){
     if(domain.includes("localhost:")){
       d = "." + domain.split(":")[0].replaceAll("//","")
     }else{
       d = ".wiggles.com.br"
+      amb = "prod"
     }
   }
   const sessionOptions: SessionOptions = {
@@ -49,7 +51,7 @@ export const obterSessionOptions = async () =>{
     cookieName: "token-auth",
     cookieOptions: {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: amb === "prod",
       domain: d,
     },
   };
